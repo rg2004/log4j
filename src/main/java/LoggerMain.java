@@ -1,12 +1,9 @@
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.util.Enumeration;
+import org.apache.log4j.*;
 
 public class LoggerMain {
 
-    Logger logger = LoggerFactory.getLogger(LoggerMain.class);
+    Logger logger = LogManager.getLogger(LoggerMain.class);
 
     public void runLoggingTest() {
         logger.debug("Logging debug test");
